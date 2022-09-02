@@ -15,6 +15,7 @@ import ContestPage from './pages/ContestPage/ContestPage';
 import UserProfile from './pages/UserProfile/UserProfile';
 import 'react-toastify/dist/ReactToastify.css';
 import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
+import HowItWorks from './pages/HowItWorks/howitworks';
 import CONSTANTS from './constants';
 import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
@@ -51,6 +52,7 @@ function App(props) {
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/registration" component={RegistrationPage} />
+        <Route exact path={'/howitworks'} component={HowItWorks} />
         <PrivateRoute
           roles={['creator', 'customer']}
           exact
